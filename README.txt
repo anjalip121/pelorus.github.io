@@ -3,6 +3,13 @@ html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
+Deployment Instructions: 
+1. Follow instruction at: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+- The original GH pages site link was: (https://fensorechase.github.io/pelorus.github.io/)
+2. On DNS provider site, create a CNAME record: point our subdomain (www.pelorus.health) to 
+the gh pages site *** (fensorechase.github.io) 
+3. Add our custom domain (pelorus.health) onto the "custom domain" section on GH Pages, and hit save. 
+
 This is Phantom, a simple design built around a grid of large, colorful, semi-interactive
 image tiles (of which you can have as many or as few as you like). Makes use of some
 SVG and animation techniques I've been experimenting with on that other project of mine
