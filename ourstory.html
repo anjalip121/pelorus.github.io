@@ -72,21 +72,23 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
+								<form 
+								      action="https://formspree.io/f/xgeboeae" 
+								      method="POST">
+								  <label>
+									Your name:
+									  <input name="name" placeholder="Your Name" type="text">
+								  </label>
+								  <label>
+								    Your email:
+								    <input type="email" name="email" placeholder="example.gmail.com">
+								  </label>
+								  <label>
+								    Your message:
+								    <textarea name="message" placeholder="Don't be shy, tell us what you have to say!"></textarea>
+								  </label>
+								  <!-- your other form fields go here -->
+								  <button type="submit">Send</button>
 								</form>
 							</section>
 							<section>
