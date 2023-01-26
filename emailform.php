@@ -1,46 +1,29 @@
 <?php
-function IsInjected($str)
-{
-    $injections = array('(\n+)',
-           '(\r+)',
-           '(\t+)',
-           '(%0A+)',
-           '(%0D+)',
-           '(%08+)',
-           '(%09+)'
-           );
-               
-    $inject = join('|', $injections);
-    $inject = "/$inject/i";
-    
-    if(preg_match($inject,$str))
-    {
-      return true;
-    }
-    else
-    {
-      return false;
-    }
+if(isset($_POST["submit"])){
+// Checking For Blank Fields..
+if($_POST["vname"]==""||$_POST["vemail"]==""||$_POST["sub"]==""||$_POST["msg"]==""){
+echo "Fill All Fields..";
+}else{
+// Check if the "Sender's Email" input field is filled out
+$email=$_POST['vemail'];
+// Sanitize E-mail Address
+$email =filter_var($email, FILTER_SANITIZE_EMAIL);
+// Validate E-mail Address
+$email= filter_var($email, FILTER_VALIDATE_EMAIL);
+if (!$email){
+echo "Invalid Sender's Email";
 }
-
-if(IsInjected($visitor_email))
-{
-    echo "Bad email value!";
-    exit;
+else{
+$subject = $_POST['sub'];
+$message = $_POST['msg'];
+$headers = 'From:'. $email2 . "rn"; // Sender's Email
+$headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
+// Message lines should not exceed 70 characters (PHP rule), so wrap it
+$message = wordwrap($message, 70);
+// Send Mail By PHP Mail Function
+mail("recievers_mail_id@xyz.com", $subject, $message, $headers);
+echo "Your mail has been sent successfuly ! Thank you for your feedback";
 }
-
-$to = "name1@website-name.com, name2@website-name.com,name3@website-name.com";
-
-$headers = "From: $email_from \r\n";
-
-$headers .= "Reply-To: $visitor_email \r\n";
-
-$headers .= "Cc: someone@domain.com \r\n";
-
-$headers .= "Bcc: someoneelse@domain.com \r\n";
-
-mail($to,$email_subject,$email_body,$headers);
-
+}
+}
 ?>
-
-
