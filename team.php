@@ -101,7 +101,7 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form action="#" id="form" method="post" name="form">
+								<form action="" id="form" method="post" name="form">
 									<input name="vname" placeholder="Your Name" type="text" value="">
 									<input name="vemail" placeholder="Your Email" type="text" value="">
 									<input name="sub" placeholder="Subject" type="text" value="">
