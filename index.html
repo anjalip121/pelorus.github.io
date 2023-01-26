@@ -99,22 +99,15 @@
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
+								<form action="#" id="form" method="post" name="form">
+									<input name="vname" placeholder="Your Name" type="text" value="">
+									<input name="vemail" placeholder="Your Email" type="text" value="">
+									<input name="sub" placeholder="Subject" type="text" value="">
+									<label>Your Suggestion/Feedback</label>
+									<textarea name="msg" placeholder="Type your text here..."></textarea>
+									<input id="send" name="submit" type="submit" value="Send Feedback">
+									</form>
+									<h3><?php include "sendemail.php"?></h3>
 							</section>
 							<section>
 								<h2>Follow</h2>
