@@ -2866,9 +2866,23 @@ input, select, textarea {
 /* Header */
 
 	#header {
+		overflow: hidden;
 		padding: 8em 0 0.1em 0 ;
 	}
 
+		header img {
+			width: 29em;
+			height: 7em;
+			margin-left: 50%;
+			transform: translateX(-50%);
+		}
+
+
+
+
+
+
+		
 		#header .logo {
 			display: block;
 			border-bottom: 0;
