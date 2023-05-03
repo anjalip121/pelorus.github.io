@@ -1,163 +1,131 @@
 <!DOCTYPE HTML>
 <!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Phantom by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Pelorus Health</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Inter">
-		  <style>
-			h1 {
-			  font-family: 'Inter';
-			  font-size: 73px;
-			  color: black;
-			}
-			h1b {
-				font-family: 'Inter';
-				font-size: 73px;
-				color: #498bf9;
-			}
-			p {
-				font-family: 'Inter';
-				font-size: 20px;
-			}
-		  </style>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <head>
+        <title>Pelorus Health</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+          /* button*/
+		.pill-btn{
+  display: inline-block;
+  box-sizing: border-box;
+  height: 70px;
+  line-height: 64px;
+  background: #498bf9;
+  padding: 0px 10px;
+  border-radius: 999em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+      vertical-align: bottom;
+    white-space: nowrap;
+  border: 3px solid #5C81F2;
+font-family: "Inter",sans-serif;  
+  letter-spacing: 1.5px;
+  transition: .15s background-color,.15s border-color,.15s color,.15s fill;
+  font-weight: 600;
+}
+.pill-btn:hover{
+  background: #649cfa;
+  border: 3px solid #7493F2;
+  color: #fff;
+}
+	  
+	  
+	  .header-content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .header-left {
+                display: flex;
+                flex-direction: column;
+            }
+            
+	    .header-left h1 {
+        margin-bottom: 10px;
+    }
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/circle_logo_1.svg" alt="" /></span><span class="title"></span>
-								</a>
+        </style>
+    </head>
+    <body class="is-preload">
+        <!-- Wrapper -->
+            <div id="wrapper">
+                <!-- Header -->
+                    <header id="header">
+                        <div class="inner header-content">
+    
+                            <!-- Nav -->
+                            <nav>
+                                <ul>
+                                    <li><a href="#menu">Menu</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+                <!-- Menu -->
+                    <nav id="menu">
+                        <h2>Menu</h2>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="ourstory.html">Our Story</a></li>
+                            <li><a href="team.html">Team</a></li>
+                        </ul>
+                    </nav>
 
-						</div>
-					</header>
+                <!-- Main -->
+                    <div id="main">
+                        <div class="inner">
+                            <div class="header-content">
+                                <div class="header-left">
+                                    <header>
+                                    <img src="images/circle_logo_1.svg" alt="Pelorus Health logo" style="width: 200px; height: 180px;">
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="ourstory.html">Our Story</a></li>
-							<li><a href="team.html">Team</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                                        <h1 style="color: black; font-family: 'Inter', sans-serif;">Let us be your <span style="color: #498bf9;"> true north.</span> </h1>
+					<p style="color: black; font-family: 'Inter', sans-serif; margin-top: 0.5em;">Navigate your type 1 diabetes journey with ease.</p>
 
-						</ul>
-					</nav>
+                                    </header>
+			
+				                                </div>
+                                <img class="logo" src="images/phone1.png" alt="Phone view of Pelorus mobile app." style="width: 550px; height: 600px;">
+	
+                            </div>
+			    <a href="https://www.instagram.com/pelorushealth/" class="pill-btn">Join Pelorus Health</a>
+                        </div>
+			
+                    </div>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>Let us be your <h1b> true north</h1b></h1>
-								<p>Navigate your type 1 diabetes journey with ease. </p>
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<a href="ourstory.html">
-										<h2>Remote Health Monitoring for T1D</h2>
-										<div class="content">
-											<p>Build and share a daily schedule with your caregiver including bolus reminders, time in range statistics, alarms, and create custom smart reminders. 
-												Emergency features include remote pinging, and an emergency letter.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<a href="ourstory.html">
-										<h2>Accessible Diabetes Education</h2>
-										<div class="content">
-											<p>Become a lifelong T1D learner with brief, realistic learning modules. 
-												Topics include: T1D basics, T1D management paths, Mindfulness, Life Skills, and more!</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="ourstory.html">
-										<h2>T1D Community Forums</h2>
-										<div class="content">
-											<p>While you build independence on your T1D journey, build a community. 
-												Learn how to seek reliable health information sources and get the opportunity to share your own experiences. </p>
-										</div>
-									</a>
-								</article>
-								
-							</section>
-						</div>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-						<section>
-								<h2>Get in touch</h2>
-								<form 
-								      action="https://formspree.io/f/xgeboeae" 
-								      method="POST">
-								  <label>
-									Your name:
-									  <input name="name" placeholder="Your Name" type="text">
-								  </label>
-								  <label>
-								    Your email:
-								    <input type="email" name="email" placeholder="example.gmail.com">
-								  </label>
-								  <label>
-								    Your message:
-								    <textarea name="message" placeholder="Don't be shy, tell us what you have to say!"></textarea>
-								  </label>
-								  <!-- your other form fields go here -->
-								  <button type="submit">Send</button>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="mailto:anjali@pelorus.health" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Pelorus Health. All rights reserved</li>
-							</ul>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+                <!-- Footer -->
+                    <footer id="footer">
+                        <div class="inner">
+                            <section>
+                                <h2>Get in touch</h2>
+                                <form method="post" action="#">
+                                    <div class="fields">
+                                        <div class="field half">
+                                            <input type="text" name="name" id="name" placeholder="Name" />
+                                        </div>
+                                        <div class="field half">
+                                            <input type="email" name="email" id="email" placeholder="Email" />
+                                        </div>
+                                        <div class="field">
+                                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <footer>
+                                        <p>Copyright © 
+                                            <strong>Pelorus Health</strong>.
+                                        </p>
+                                    </footer>
+                                    <ul class="actions">
+                                        <li><input type="submit" value="

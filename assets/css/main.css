@@ -7,6 +7,83 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+$bgColor: #498bf9;
+$textHoverColor: white;
+$debug: false;
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	overflow: if($debug, unset, hidden);
+	
+	text-decoration: none;
+	
+	font-family: "Inter",sans-serif;
+	font-weight: 600;
+	font-size: 2em;
+	
+	padding: 0.75em 1em;
+	
+	color: #498bf9;
+	
+	border: 0.15em solid #498bf9;
+	border-radius: calc(0.75em + 0.5em + 0.15em);
+	
+	transition: 4s;
+	
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: -1.5em;
+		
+		z-index: -1;
+		
+		width: 200%;
+		aspect-ratio: 1;
+		
+		border: if($debug, inherit, none);
+		border-radius: 40%;
+		
+		background-color: rgba($bgColor, 0.25);
+		
+		transition: 4s;
+	}
+	
+	&:before {
+		left: -80%;
+		transform: translate3d(0, 5em, 0) rotate(-340deg);
+	}
+	
+	&:after {
+		right: -80%;
+		transform: translate3d(0, 5em, 0) rotate(390deg);
+	}
+	
+	&:hover,
+	&:focus {
+		color: $textHoverColor;
+		
+		&:before,
+		&:after {
+			transform: none;
+			background-color: rgba($bgColor, 0.75);
+		}
+	}
+}
+
+
+
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2866,23 +2943,9 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		overflow: hidden;
 		padding: 8em 0 0.1em 0 ;
 	}
 
-		header img {
-			width: 29em;
-			height: 7em;
-			margin-left: 50%;
-			transform: translateX(-50%);
-		}
-
-
-
-
-
-
-		
 		#header .logo {
 			display: block;
 			border-bottom: 0;
@@ -2906,8 +2969,8 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 5em;
-					height: 5em;
+					width: 29em;
+					height: 7em;
 				}
 
 		#header nav {
@@ -3378,3 +3441,78 @@ input, select, textarea {
 			}
 
 		}
+
+/* Pill Button */
+
+$bgColor: #498bf9;
+$textHoverColor: white;
+$debug: false;
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.button {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	overflow: if($debug, unset, hidden);
+	
+	text-decoration: none;
+	
+	font-family: "Inter",sans-serif;
+	font-weight: 600;
+	font-size: 2em;
+	
+	padding: 0.75em 1em;
+	
+	color: #498bf9;
+	
+	border: 0.15em solid #498bf9;
+	border-radius: calc(0.75em + 0.5em + 0.15em);
+	
+	transition: 4s;
+	
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: -1.5em;
+		
+		z-index: -1;
+		
+		width: 200%;
+		aspect-ratio: 1;
+		
+		border: if($debug, inherit, none);
+		border-radius: 40%;
+		
+		background-color: rgba($bgColor, 0.25);
+		
+		transition: 4s;
+	}
+	
+	&:before {
+		left: -80%;
+		transform: translate3d(0, 5em, 0) rotate(-340deg);
+	}
+	
+	&:after {
+		right: -80%;
+		transform: translate3d(0, 5em, 0) rotate(390deg);
+	}
+	
+	&:hover,
+	&:focus {
+		color: $textHoverColor;
+		
+		&:before,
+		&:after {
+			transform: none;
+			background-color: rgba($bgColor, 0.75);
+		}
+	}
+}
