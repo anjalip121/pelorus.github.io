@@ -60,6 +60,7 @@ font-family: "Inter",sans-serif;
     <body class="is-preload">
         <!-- Wrapper -->
             <div id="wrapper">
+                
                 <!-- Header -->
                     <header id="header">
                         <div class="inner header-content">
@@ -73,15 +74,17 @@ font-family: "Inter",sans-serif;
                         </div>
                     </header>
 
-                <!-- Menu -->
-                    <nav id="menu">
-                        <h2>Menu</h2>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="ourstory.html">Our Story</a></li>
-                            <li><a href="team.html">Team</a></li>
-                        </ul>
-                    </nav>
+				<!-- Menu -->
+                <nav id="menu">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ourstory.html">Our Story</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+
+                    </ul>
+                </nav>
 
                 <!-- Main -->
                     <div id="main">
@@ -105,26 +108,49 @@ font-family: "Inter",sans-serif;
                     </div>
 
                 <!-- Footer -->
-                    <footer id="footer">
-                        <div class="inner">
-                            <section>
-                                <h2>Get in touch</h2>
-                                <form method="post" action="#">
-                                    <div class="fields">
-                                        <div class="field half">
-                                            <input type="text" name="name" id="name" placeholder="Name" />
-                                        </div>
-                                        <div class="field half">
-                                            <input type="email" name="email" id="email" placeholder="Email" />
-                                        </div>
-                                        <div class="field">
-                                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <footer>
-                                        <p>Copyright © 
-                                            <strong>Pelorus Health</strong>.
-                                        </p>
-                                    </footer>
-                                    <ul class="actions">
-                                        <li><input type="submit" value="
+</body>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>Get in touch</h2>
+            <form 
+                  action="https://formspree.io/f/xgeboeae" 
+                  method="POST">
+              <label>
+                Your name:
+                  <input name="name" placeholder="Your Name" type="text">
+              </label>
+              <label>
+                Your email:
+                <input type="email" name="email" placeholder="example.gmail.com">
+              </label>
+              <label>
+                Your message:
+                <textarea name="message" placeholder="Don't be shy, tell us what you have to say!"></textarea>
+              </label>
+              <!-- your other form fields go here -->
+              <button type="submit">Send</button>
+            </form>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                <li><a href="mailto:anjali@pelorus.health" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Pelorus Health. All rights reserved</li>
+        </ul>
+    </div>
+
+    <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</footer>
+
+</html>
